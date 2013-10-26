@@ -49,7 +49,8 @@ Default value:
   'c': 'Colors',
   's': 'Spacing',
   't': 'Typo'
-}```
+}
+```
 
 
 ### Usage Examples
