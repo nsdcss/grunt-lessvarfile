@@ -1,6 +1,6 @@
 # grunt-lessvarfile
 
-> Create less variable files looking for local variables defined in LESS-files.
+> Create a LESS variables-file based on variables defined in seperate LESS-files (modules/components).
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
