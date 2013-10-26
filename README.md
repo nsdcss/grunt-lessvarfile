@@ -62,7 +62,7 @@ grunt.initConfig({
   lessvarfile: {
     options: {},
     files: {
-      'tmp/variables--default.less': 'test/fixtures/**/*.less'
+      'your-framework/variables--default.less': 'your-framework/modules/**/*.less'
     }
   },
 })
@@ -82,7 +82,7 @@ grunt.initConfig({
       }
     },
     files: {
-      'tmp/variables--custom.less': 'test/fixtures/**/*.less'
+      'your-framework/variables--custom.less': 'your-framework/modules/**/*.less'
     },
   },
 })
