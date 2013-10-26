@@ -1,0 +1,48 @@
+{
+  "name": "grunt-lessvarfile",
+  "description": "Create less variable files",
+  "version": "0.1.0",
+  "homepage": "https://github.com/nsdcss/var-creator",
+  "author": {
+    "name": "Nikolaj Sokolowski",
+    "email": "mail@sokolowski-design.de",
+    "url": "http://pleasestyle.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nsdcss/var-creator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nsdcss/var-creator/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/nsdcss/var-creator/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "walk": "~2.2.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.1",
+    "walk": "~2.2.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}
