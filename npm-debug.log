@@ -1,0 +1,154 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.21
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/nikolajsokolowski/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz
+12 verbose folder .
+13 silly lockFile 1f1177db-tar tar://.
+14 verbose lock tar://. /Users/nikolajsokolowski/.npm/1f1177db-tar.lock
+15 silly lockFile 7f05bfc6-6496-0-35196074610576034-tmp-tgz tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz
+16 verbose lock tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz /Users/nikolajsokolowski/.npm/7f05bfc6-6496-0-35196074610576034-tmp-tgz.lock
+17 silly lockFile 1f1177db-tar tar://.
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 7f05bfc6-6496-0-35196074610576034-tmp-tgz tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz
+20 silly lockFile 7f05bfc6-6496-0-35196074610576034-tmp-tgz tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz
+21 verbose tar unpack /Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz
+22 silly lockFile 6a96cc6f-6496-0-35196074610576034-package tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/package
+23 verbose lock tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/package /Users/nikolajsokolowski/.npm/6a96cc6f-6496-0-35196074610576034-package.lock
+24 silly lockFile 7f05bfc6-6496-0-35196074610576034-tmp-tgz tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz
+25 verbose lock tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz /Users/nikolajsokolowski/.npm/7f05bfc6-6496-0-35196074610576034-tmp-tgz.lock
+26 silly gunzTarPerm modes [ '755', '644' ]
+27 silly gunzTarPerm extractEntry package.json
+28 silly gunzTarPerm extractEntry .npmignore
+29 silly gunzTarPerm extractEntry README.md
+30 silly gunzTarPerm extractEntry Gruntfile.js
+31 silly gunzTarPerm extractEntry .jshintrc
+32 silly gunzTarPerm extractEntry LICENSE-MIT
+33 silly gunzTarPerm extractEntry tasks/lessvarfile.js
+34 silly gunzTarPerm extractEntry test/lessvarfile_test.js
+35 silly gunzTarPerm extractEntry test/expected/custom_options.less
+36 silly gunzTarPerm extractEntry test/expected/default_options.less
+37 silly gunzTarPerm extractEntry test/fixtures/less/test-1.less
+38 silly gunzTarPerm extractEntry test/fixtures/less/test-2.less
+39 silly lockFile 6a96cc6f-6496-0-35196074610576034-package tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/package
+40 silly lockFile 6a96cc6f-6496-0-35196074610576034-package tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/package
+41 silly lockFile 7f05bfc6-6496-0-35196074610576034-tmp-tgz tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz
+42 silly lockFile 7f05bfc6-6496-0-35196074610576034-tmp-tgz tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/tmp.tgz
+43 verbose tar pack [ '/Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz',
+43 verbose tar pack   '/Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/package' ]
+44 verbose tarball /Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz
+45 verbose folder /Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/package
+46 silly lockFile 6a96cc6f-6496-0-35196074610576034-package tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/package
+47 verbose lock tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/package /Users/nikolajsokolowski/.npm/6a96cc6f-6496-0-35196074610576034-package.lock
+48 silly lockFile 71542d1c-nt-lessvarfile-0-1-0-package-tgz tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz
+49 verbose lock tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz /Users/nikolajsokolowski/.npm/71542d1c-nt-lessvarfile-0-1-0-package-tgz.lock
+50 silly lockFile 6a96cc6f-6496-0-35196074610576034-package tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/package
+51 silly lockFile 6a96cc6f-6496-0-35196074610576034-package tar:///Users/nikolajsokolowski/tmp/npm-13165-oXVxm7dL/1382824766496-0.35196074610576034/package
+52 silly lockFile 71542d1c-nt-lessvarfile-0-1-0-package-tgz tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz
+53 silly lockFile 71542d1c-nt-lessvarfile-0-1-0-package-tgz tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz
+54 silly lockFile 07810ecb--grunt-lessvarfile-0-1-0-package /Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package
+55 verbose lock /Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package /Users/nikolajsokolowski/.npm/07810ecb--grunt-lessvarfile-0-1-0-package.lock
+56 silly lockFile 07810ecb--grunt-lessvarfile-0-1-0-package /Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package
+57 silly lockFile 07810ecb--grunt-lessvarfile-0-1-0-package /Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package
+58 verbose tar unpack /Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz
+59 silly lockFile 1f24679d--grunt-lessvarfile-0-1-0-package tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package
+60 verbose lock tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package /Users/nikolajsokolowski/.npm/1f24679d--grunt-lessvarfile-0-1-0-package.lock
+61 silly lockFile 71542d1c-nt-lessvarfile-0-1-0-package-tgz tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz
+62 verbose lock tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz /Users/nikolajsokolowski/.npm/71542d1c-nt-lessvarfile-0-1-0-package-tgz.lock
+63 silly gunzTarPerm modes [ '755', '644' ]
+64 silly gunzTarPerm extractEntry package.json
+65 silly gunzTarPerm extractEntry .npmignore
+66 silly gunzTarPerm extractEntry README.md
+67 silly gunzTarPerm extractEntry Gruntfile.js
+68 silly gunzTarPerm extractEntry .jshintrc
+69 silly gunzTarPerm extractEntry LICENSE-MIT
+70 silly gunzTarPerm extractEntry tasks/lessvarfile.js
+71 silly gunzTarPerm extractEntry test/lessvarfile_test.js
+72 silly gunzTarPerm extractEntry test/expected/custom_options.less
+73 silly gunzTarPerm extractEntry test/expected/default_options.less
+74 silly gunzTarPerm extractEntry test/fixtures/less/test-1.less
+75 silly gunzTarPerm extractEntry test/fixtures/less/test-2.less
+76 silly lockFile 1f24679d--grunt-lessvarfile-0-1-0-package tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package
+77 silly lockFile 1f24679d--grunt-lessvarfile-0-1-0-package tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package
+78 silly lockFile 71542d1c-nt-lessvarfile-0-1-0-package-tgz tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz
+79 silly lockFile 71542d1c-nt-lessvarfile-0-1-0-package-tgz tar:///Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz
+80 verbose chmod /Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz 644
+81 verbose chown /Users/nikolajsokolowski/.npm/grunt-lessvarfile/0.1.0/package.tgz [ 0, 20 ]
+82 silly lockFile 3a52ce78- .
+83 silly lockFile 3a52ce78- .
+84 silly publish { name: 'grunt-lessvarfile',
+84 silly publish   description: 'Create less variable files',
+84 silly publish   version: '0.1.0',
+84 silly publish   homepage: 'https://github.com/nsdcss/var-creator',
+84 silly publish   author:
+84 silly publish    { name: 'Nikolaj Sokolowski',
+84 silly publish      email: 'mail@sokolowski-design.de',
+84 silly publish      url: 'http://pleasestyle.me' },
+84 silly publish   repository: { type: 'git', url: 'git://github.com/nsdcss/var-creator.git' },
+84 silly publish   bugs: { url: 'https://github.com/nsdcss/var-creator/issues' },
+84 silly publish   licenses:
+84 silly publish    [ { type: 'MIT',
+84 silly publish        url: 'https://github.com/nsdcss/var-creator/blob/master/LICENSE-MIT' } ],
+84 silly publish   main: 'Gruntfile.js',
+84 silly publish   engines: { node: '>= 0.8.0' },
+84 silly publish   scripts: { test: 'grunt test' },
+84 silly publish   dependencies: { grunt: '~0.4.1', walk: '~2.2.1' },
+84 silly publish   devDependencies:
+84 silly publish    { 'grunt-contrib-jshint': '~0.6.0',
+84 silly publish      'grunt-contrib-clean': '~0.4.0',
+84 silly publish      'grunt-contrib-nodeunit': '~0.2.0',
+84 silly publish      grunt: '~0.4.1',
+84 silly publish      walk: '~2.2.1' },
+84 silly publish   peerDependencies: { grunt: '~0.4.1' },
+84 silly publish   keywords: [ 'gruntplugin' ],
+84 silly publish   readme: '# grunt-lessvarfile\n\n> Create a LESS variables-file that collects variables defined in other LESS-files (modules/components).\n\n## Getting Started\nThis plugin requires Grunt `~0.4.1`\n\nIf you haven\'t used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you\'re familiar with that process, you may install this plugin with this command:\n\n```shell\nnpm install grunt-lessvarfile --save-dev\n```\n\nOnce the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:\n\n```js\ngrunt.loadNpmTasks(\'grunt-lessvarfile\');\n```\n\n## The "lessvarfile" task\n\n### Overview\nIn your project\'s Gruntfile, add a section named `lessvarfile` to the data object passed into `grunt.initConfig()`.\n\n```js\ngrunt.initConfig({\n  lessvarfile: {\n    options: {\n      // Task-specific options go here.\n    },\n    your_target: {\n      // Target-specific file lists and/or options go here.\n    },\n  },\n})\n```\n\n### Options\n\n#### options.alignAt\nType: `Int`\nDefault value: `40`\n\n#### options.sectionsmap\nType: `Object`\nDefault value: \n```js\n{\n  \'c\': \'Colors\',\n  \'s\': \'Spacing\',\n  \'t\': \'Typo\'\n}\n```\n\n\n### Usage Examples\n\n#### Default Options\n\n```js\ngrunt.initConfig({\n  lessvarfile: {\n    options: {},\n    files: {\n      \'your-framework/variables.less\': \'your-framework/modules/**/*.less\'\n    }\n  },\n})\n```\n\n#### Custom Options\n\n```js\ngrunt.initConfig({\n  lessvarfile: {\n    options: {\n      alignAt: 1,\n      sectionsmap: {\n        \'c\': \'My Crazy Colors\',\n        \'s\': \'My Spacing\',\n        \'t\': \'My Typo\'\n      }\n    },\n    files: {\n      \'your-framework/variables.less\': \'your-framework/modules/**/*.less\'\n    },\n  },\n})\n```\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).\n\n## Release History\n\n### 0.1.0\n\n+ Initial Release\n',
+84 silly publish   readmeFilename: 'README.md',
+84 silly publish   _id: 'grunt-lessvarfile@0.1.0',
+84 silly publish   dist: { shasum: 'a58d360ccc8468811b1b50cda7c01659779aaf9b' },
+84 silly publish   _from: '.' }
+85 verbose url raw grunt-lessvarfile
+86 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-lessvarfile' ]
+87 verbose url resolved https://registry.npmjs.org/grunt-lessvarfile
+88 info trying registry request attempt 1 at 23:59:26
+89 http PUT https://registry.npmjs.org/grunt-lessvarfile
+90 http 409 https://registry.npmjs.org/grunt-lessvarfile
+91 verbose url raw grunt-lessvarfile
+92 verbose url resolving [ 'https://registry.npmjs.org/', './grunt-lessvarfile' ]
+93 verbose url resolved https://registry.npmjs.org/grunt-lessvarfile
+94 info trying registry request attempt 1 at 23:59:28
+95 http GET https://registry.npmjs.org/grunt-lessvarfile
+96 http 200 https://registry.npmjs.org/grunt-lessvarfile
+97 error publish fail Cannot publish over existing version.
+97 error publish fail Update the 'version' field in package.json and try again.
+97 error publish fail
+97 error publish fail If the previous version was published in error, see:
+97 error publish fail     npm help unpublish
+97 error publish fail
+97 error publish fail To automatically increment version numbers, see:
+97 error publish fail     npm help version
+98 error System Darwin 13.0.0
+99 error command "node" "/usr/local/bin/npm" "publish"
+100 error cwd /Applications/MAMP/htdocs/nsdcss/final-grunt/var-creator
+101 error node -v v0.10.21
+102 error npm -v 1.3.11
+103 error code EPUBLISHCONFLICT
+104 verbose exit [ 1, true ]
