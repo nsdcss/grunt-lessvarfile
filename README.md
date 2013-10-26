@@ -1,6 +1,6 @@
 # grunt-lessvarfile
 
-> Create less variable files
+> Create less variable files looking for local variables defined in LESS-files.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -37,46 +37,51 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
-Type: `String`
-Default value: `',  '`
+#### options.alignAt
+Type: `Int`
+Default value: `40`
 
-A string value that is used to do something with whatever.
+#### options.sectionsmap
+Type: `Object`
+Default value: 
+```js
+{
+  'c': 'Colors',
+  's': 'Spacing',
+  't': 'Typo'
+}```
 
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
-
-A string value that is used to do something else with whatever else.
 
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
 
 ```js
 grunt.initConfig({
   lessvarfile: {
     options: {},
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
+      'tmp/variables--default.less': 'test/fixtures/**/*.less'
+    }
   },
 })
 ```
 
 #### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
 
 ```js
 grunt.initConfig({
   lessvarfile: {
     options: {
-      separator: ': ',
-      punctuation: ' !!!',
+      alignAt: 1,
+      sectionsmap: {
+        'c': 'My Crazy Colors',
+        's': 'My Spacing',
+        't': 'My Typo'
+      }
     },
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
+      'tmp/variables--custom.less': 'test/fixtures/**/*.less'
     },
   },
 })
