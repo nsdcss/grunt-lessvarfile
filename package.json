@@ -6,7 +6,11 @@
     (http://pleasestyle.me)",
   "main": "./lib/varcreator.js",
   "dependencies": {
+    "grunt": "~0.4.1",
     "walk": "~2.2.1"
+  },
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
