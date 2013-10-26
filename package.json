@@ -2,8 +2,7 @@
   "name": "node-varfile-creator",
   "version": "0.1.0",
   "description": "A little script to automatically create a variables.less file",
-  "author": "Nikolaj Sokolowski <mail@soklowski-design.de> ⏎
-    (http://pleasestyle.me)",
+  "author": "Nikolaj Sokolowski <mail@soklowski-design.de> (http://pleasestyle.me)",
   "main": "./lib/varcreator.js",
   "dependencies": {
     "grunt": "~0.4.1",
