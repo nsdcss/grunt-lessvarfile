@@ -1,6 +1,6 @@
 # grunt-lessvarfile
 
-> Create a LESS variables-file based on variables defined in seperate LESS-files (modules/components).
+> Create a LESS variables-file that collects variables defined in other LESS-files (modules/components).
 
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
@@ -92,4 +92,7 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+
+### 0.1.0
+
++ Initial Release
