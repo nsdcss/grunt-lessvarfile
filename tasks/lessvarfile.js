@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 
 	var fs = require('fs');
 
-	var variableDeclaration = /^\@[^media ]/;
+	var variableDeclaration = /^\@/;
 
 	grunt.registerMultiTask('lessvarfile', 'Create less variable files', function () {
 		// Merge task-specific and/or target-specific options with these defaults.
@@ -43,7 +43,7 @@ module.exports = function (grunt) {
 		var getVariables = function (css) {
 			var lines = css.split('\n');
 			for (var i = 0; i < lines.length; i++) {
-				if (lines[i].match(variableDeclaration)) {
+				if (lines[i].match(variableDeclaration) && lines[i].substring(0,6) !== '@media') {
 					var split = lines[i].split(':');
 					var variableKey = split[0].trim();
 					var variableValue = split[1].trim();

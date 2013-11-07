@@ -1,0 +1,20 @@
+// Variables
+@c--primary: #f00;
+@s--normal: 20px;
+
+@my-module--height: 500px;
+
+@my-other-module--height: 500px;
+
+body {
+	background: @c--primary;
+	padding: @s--normal;
+}
+
+@media only screen and (min-width: 480px) {
+	body {
+		padding: @s--normal * 2;
+	}
+}
+
+
