@@ -1,7 +1,7 @@
 {
   "name": "grunt-lessvarfile",
   "description": "Create less variable files",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/nsdcss/var-creator",
   "author": {
     "name": "Nikolaj Sokolowski",
@@ -35,8 +35,7 @@
     "grunt-contrib-jshint": "~0.6.0",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt": "~0.4.1",
-    "walk": "~2.2.1"
+    "grunt": "~0.4.1"
   },
   "peerDependencies": {
     "grunt": "~0.4.1"

@@ -13,14 +13,14 @@ module.exports = function (grunt) {
 	// Please see the Grunt documentation for more information regarding task
 	// creation: http://gruntjs.com/creating-tasks
 
-	var walk = require('walk');
 	var fs = require('fs');
 
-	var variableDeclaration = /^\@/;
+	var variableDeclaration = /^\@[^media ]/;
 
 	grunt.registerMultiTask('lessvarfile', 'Create less variable files', function () {
 		// Merge task-specific and/or target-specific options with these defaults.
 		var options = this.options({
+			sectionDelimiter: '--',
 			sectionsmap: {
 				'c': 'Colors',
 				's': 'Spacing',
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
 					var split = lines[i].split(':');
 					var variableKey = split[0].trim();
 					var variableValue = split[1].trim();
-					var variableGroup = variableKey.split('--')[0].slice(1);
+					var variableGroup = variableKey.split(options.sectionDelimiter)[0].slice(1);
 					variables[variableGroup] = variables[variableGroup] || {};
 					if (typeof variables[variableGroup][variableKey] === "undefined") {
 						variables[variableGroup][variableKey] = variableValue;
@@ -63,6 +63,7 @@ module.exports = function (grunt) {
 			} else {
 				grunt.log.writeln('"' + existing + '" does not exist it will be created');
 			}
+			console.log('Fetched existing variables...');
 		};
 
 		var makeOutputString = function (variablesObj) {
@@ -102,7 +103,9 @@ module.exports = function (grunt) {
 				}
 			}).map(function (filepath) {
 					// Read file source.
-					getVariables(grunt.file.read(filepath));
+					var file = grunt.file.read(filepath);
+					console.log('Fetching variables from file:' + filepath);
+					getVariables(file);
 				});
 
 			// Write the destination file.

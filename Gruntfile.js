@@ -32,11 +32,12 @@ module.exports = function (grunt) {
 
 				},
 				files: {
-					'tmp/variables--default.less': 'test/fixtures/**/*.less'
+					'tmp/variables--default.less': 'test/fixtures/less--default/**/*.less'
 				}
 			},
 			custom_options: {
 				options: {
+					sectionDelimiter: '__',
 					alignAt: 1,
 					sectionsmap: {
 						'c': 'My Crazy Colors',
@@ -45,7 +46,7 @@ module.exports = function (grunt) {
 					}
 				},
 				files: {
-					'tmp/variables--custom.less': 'test/fixtures/**/*.less'
+					'tmp/variables--custom.less': 'test/fixtures/less--custom/**/*.less'
 				}
 			}
 		},

@@ -52,6 +52,10 @@ Default value:
 }
 ```
 
+#### options.sectionDelimiter
+Type: `String`
+Default value: `--`
+
 
 ### Usage Examples
 
@@ -74,6 +78,7 @@ grunt.initConfig({
 grunt.initConfig({
   lessvarfile: {
     options: {
+      sectionDelimiter: '__',
       alignAt: 1,
       sectionsmap: {
         'c': 'My Crazy Colors',
@@ -96,3 +101,8 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 ### 0.1.0
 
 + Initial Release
+
+### 0.1.1
+
++ Removed "walk" dependency
++ Added delimiter option
