@@ -1,8 +1,8 @@
 {
   "name": "grunt-lessvarfile",
   "description": "Create less variable files",
-  "version": "0.1.1",
-  "homepage": "https://github.com/nsdcss/var-creator",
+  "version": "0.1.2",
+  "homepage": "https://github.com/nsdcss/grunt-lessvarfile",
   "author": {
     "name": "Nikolaj Sokolowski",
     "email": "mail@sokolowski-design.de",
@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/nsdcss/var-creator.git"
+    "url": "git://github.com/nsdcss/grunt-lessvarfile.git"
   },
   "bugs": {
-    "url": "https://github.com/nsdcss/var-creator/issues"
+    "url": "https://github.com/nsdcss/grunt-lessvarfile/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/nsdcss/var-creator/blob/master/LICENSE-MIT"
+      "url": "https://github.com/nsdcss/grunt-lessvarfile/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",

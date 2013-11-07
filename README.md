@@ -106,3 +106,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 + Removed "walk" dependency
 + Added delimiter option
+
+### 0.1.2
+
++ Renamed Git repository
