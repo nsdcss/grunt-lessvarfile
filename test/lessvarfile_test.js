@@ -41,7 +41,16 @@ exports.lessvarfile = {
 
 		var actual = grunt.file.read('tmp/variables--custom.less');
 		var expected = grunt.file.read('test/expected/custom_options.less');
-		test.equal(actual, expected, 'The file "tmp/variables--custom.less" has been created or updated.');
+		test.equal(actual, expected, 'The file "tmp/variables--custom.less" (This includes no optional component) has been created or updated.');
+
+		test.done();
+	},
+	custom_options_2: function (test) {
+		test.expect(1);
+
+		var actual = grunt.file.read('tmp/variables--custom-2.less');
+		var expected = grunt.file.read('test/expected/custom_options_2.less');
+		test.equal(actual, expected, 'The file "tmp/variables--custom-2.less" (This includes only one optional component) has been created or updated.');
 
 		test.done();
 	},

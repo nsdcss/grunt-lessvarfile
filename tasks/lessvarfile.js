@@ -1,6 +1,6 @@
 /*
  * grunt-lessvarfile
- * https://github.com/nsdcss/var-creator
+ * https://github.com/nsdcss/grunt-lessvarfile
  *
  * Copyright (c) 2013 Nikolaj Sokolowski
  * Licensed under the MIT license.
@@ -14,6 +14,7 @@ module.exports = function (grunt) {
 	// creation: http://gruntjs.com/creating-tasks
 
 	var fs = require('fs');
+	var p = require('path');
 
 	var variableDeclaration = /^\@/;
 
@@ -26,9 +27,13 @@ module.exports = function (grunt) {
 				's': 'Spacing',
 				't': 'Typo'
 			},
-			alignAt: 40
+			alignAt: 40,
+			optionalComponentIdentifier: 'oc__',
+			includeAllComponents: true,
+			optionalComponentsList: []
 		});
 		var variables = {};
+		var optionalComponentIdentifierMatch = new RegExp('^' + options.optionalComponentIdentifier,"g");
 
 		var makeHeading = function (string) {
 			var stringArray = string.split('-');
@@ -63,7 +68,7 @@ module.exports = function (grunt) {
 			} else {
 				grunt.log.writeln('"' + existing + '" does not exist it will be created');
 			}
-			console.log('Fetched existing variables...');
+			grunt.log.writeln('Fetched existing variables...');
 		};
 
 		var makeOutputString = function (variablesObj) {
@@ -90,6 +95,20 @@ module.exports = function (grunt) {
 			return output;
 		};
 
+		var checkIfNeededComponent = function(filepath) {
+			var fileName = p.basename(filepath);
+			if(fileName.match(optionalComponentIdentifierMatch)) {
+				if(options.optionalComponentsList.indexOf(fileName) >= 0) {
+					grunt.log.writeln('Component "' + fileName + '" will be included');
+					return true;
+				} else {
+					return false;
+				}
+			} else {
+				return true;
+			}
+		};
+
 		this.files.forEach(function (f) {
 
 			getExistingVariables(f.dest);
@@ -99,13 +118,18 @@ module.exports = function (grunt) {
 					grunt.log.warn('Source file "' + filepath + '" not found.');
 					return false;
 				} else {
-					return true;
+					if(options.includeAllComponents) {
+						return true;
+					} else {
+						return checkIfNeededComponent(filepath);
+					}
+
 				}
 			}).map(function (filepath) {
 					// Read file source.
-					var file = grunt.file.read(filepath);
-					console.log('Fetching variables from file:' + filepath);
-					getVariables(file);
+					var fileContent = grunt.file.read(filepath);
+					grunt.log.writeln('Fetching variables from file:' + filepath);
+					getVariables(fileContent);
 				});
 
 			// Write the destination file.

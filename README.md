@@ -54,7 +54,19 @@ Default value:
 
 #### options.sectionDelimiter
 Type: `String`
-Default value: `--`
+Default value: `"--"`
+
+#### options.optionalComponentIdentifier
+Type: `String`
+Default value: `"oc__"`
+
+#### options.includeAllComponents
+Type: `Boolean`
+Default value: `true`
+
+#### options.optionalComponentsList
+Type: `Array`
+Default value: `[]`
 
 
 ### Usage Examples
@@ -84,7 +96,10 @@ grunt.initConfig({
         'c': 'My Crazy Colors',
         's': 'My Spacing',
         't': 'My Typo'
-      }
+      },
+      includeAllComponents: false,
+      optionalComponentIdentifier: 'component__',
+      optionalComponentsList: ['component__some-component.less']
     },
     files: {
       'your-framework/variables.less': 'your-framework/modules/**/*.less'
@@ -110,3 +125,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 ### 0.1.2
 
 + Renamed Git repository
+
+### 0.2.0
+
++ Added some options to mark specific files (modules) as optional

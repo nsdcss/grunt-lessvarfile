@@ -43,10 +43,29 @@ module.exports = function (grunt) {
 						'c': 'My Crazy Colors',
 						's': 'My Spacing',
 						't': 'My Typo'
-					}
+					},
+					includeAllComponents: false,
+					optionalComponentIdentifier: 'oc__'
 				},
 				files: {
 					'tmp/variables--custom.less': 'test/fixtures/less--custom/**/*.less'
+				}
+			},
+			custom_options_2: {
+				options: {
+					sectionDelimiter: '__',
+					alignAt: 1,
+					sectionsmap: {
+						'c': 'My Crazy Colors',
+						's': 'My Spacing',
+						't': 'My Typo'
+					},
+					includeAllComponents: false,
+					optionalComponentIdentifier: 'oc__',
+					optionalComponentsList: ['oc__optional-component.less']
+				},
+				files: {
+					'tmp/variables--custom-2.less': 'test/fixtures/less--custom/**/*.less'
 				}
 			}
 		},
