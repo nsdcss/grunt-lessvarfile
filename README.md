@@ -39,8 +39,7 @@ grunt.initConfig({
 
 #### options.alignAt
 
-Type: `Int`
-
+Type: `Int` 
 Default value: `40`
 
 #### options.sectionsmap
