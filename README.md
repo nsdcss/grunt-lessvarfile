@@ -38,10 +38,12 @@ grunt.initConfig({
 ### Options
 
 #### options.alignAt
+
 Type: `Int`
 Default value: `40`
 
 #### options.sectionsmap
+
 Type: `Object`
 Default value: 
 ```js
@@ -53,18 +55,22 @@ Default value:
 ```
 
 #### options.sectionDelimiter
+
 Type: `String`
 Default value: `"--"`
 
 #### options.optionalComponentIdentifier
+
 Type: `String`
 Default value: `"oc__"`
 
 #### options.includeAllComponents
+
 Type: `Boolean`
 Default value: `true`
 
 #### options.optionalComponentsList
+
 Type: `Array`
 Default value: `[]`
 
