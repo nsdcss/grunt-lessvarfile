@@ -134,4 +134,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ### 0.2.0
 
-+ Added some options to mark specific files (modules) as optional
++ Added some options to mark specific files (components) as optional
