@@ -32,8 +32,30 @@ module.exports = function (grunt) {
 			includeAllComponents: true,
 			optionalComponentsList: []
 		});
+
+		var blacklist = [
+			'@media',
+			'@import',
+			'@charset',
+			'@font-face'
+		];
+
 		var variables = {};
 		var optionalComponentIdentifierMatch = new RegExp('^' + options.optionalComponentIdentifier,"g");
+
+		var checkIfVariable = function(the_line) {
+			if(the_line.match(variableDeclaration)) {
+				for(var i = 0; i < blacklist.length; i++) {
+					var str = blacklist[i];
+					var strLength = str.length;
+					if(the_line.substring(0,strLength) === str) {
+						return false;
+					}
+				}
+				return true;
+			}
+			return false;
+		};
 
 		var makeHeading = function (string) {
 			var stringArray = string.split('-');
@@ -48,7 +70,7 @@ module.exports = function (grunt) {
 		var getVariables = function (css) {
 			var lines = css.split('\n');
 			for (var i = 0; i < lines.length; i++) {
-				if (lines[i].match(variableDeclaration) && lines[i].substring(0,6) !== '@media') {
+				if (checkIfVariable(lines[i])) {
 					var split = lines[i].split(':');
 					var variableKey = split[0].trim();
 					var variableValue = split[1].trim();
