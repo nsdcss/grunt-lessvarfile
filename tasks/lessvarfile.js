@@ -37,7 +37,11 @@ module.exports = function (grunt) {
 			'@media',
 			'@import',
 			'@charset',
-			'@font-face'
+			'@font-face',
+			'@-webkit-keyframes',
+			'@-moz-keyframes',
+			'@-o-keyframes',
+			'@keyframes'
 		];
 
 		var variables = {};
