@@ -1,7 +1,7 @@
 {
   "name": "grunt-lessvarfile",
   "description": "Create less variable files",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/nsdcss/grunt-lessvarfile",
   "author": {
     "name": "Nikolaj Sokolowski",
